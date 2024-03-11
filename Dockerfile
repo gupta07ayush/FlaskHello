@@ -8,7 +8,6 @@ WORKDIR /app
 COPY . /app
 
 # Install Flask and other dependencies
-RUN pip install -r requirements.txt
 RUN pip install Flask gunicorn
 
 # Expose the port on which the Flask app will run
